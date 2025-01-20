@@ -1,0 +1,42 @@
+{
+  "name": "yt-quiz",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/yt-quiz.umd.cjs",
+  "module": "./dist/yt-quiz.js",
+  "types": "./dist/yt-quiz.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/yt-quiz.js",
+      "require": "./dist/yt-quiz.umd.cjs"
+    },
+    "./dist/main.css": "./dist/main.css"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "delete:dist": "rm -rf dist",
+    "delete:node": "rm -rf node_modules",
+    "delete:all": "npm run delete:dist && npm run delete:node"
+  },
+  "author": "Anthony J. Clark",
+  "license": "ISC",
+  "description": "A small library for creating quizzes alongside a YouTube video.",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.4.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0",
+    "vite": "^5.2.13",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "dependencies": {
+    "@types/youtube": "^0.1.0"
+  }
+}
