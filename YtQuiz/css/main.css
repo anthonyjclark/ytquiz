@@ -1,2 +1,12 @@
-main {
+.yt-quiz-container {
+  border-radius: 3px;
+  animation: highlight 1000ms ease-out;
+}
+@keyframes highlight {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
 }
