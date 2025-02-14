@@ -37,6 +37,7 @@
     "vite-plugin-dts": "^3.9.1"
   },
   "dependencies": {
-    "@types/youtube": "^0.1.0"
+    "@types/youtube": "^0.1.0",
+    "htl": "^0.3.1"
   }
 }

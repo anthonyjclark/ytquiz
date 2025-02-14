@@ -4,6 +4,12 @@ import { YtQuiz } from '../lib/main';
 
 const questions = [
 	{
+		time: 2,
+		question: 'This is a fill in the blank question.',
+		answers: [],
+		correct: 'Here is the correct answer.',
+	},
+	{
 		time: 5,
 		question: 'What is the capital of France?',
 		answers: [
@@ -28,7 +34,12 @@ const questions = [
 	},
 ];
 
-new YtQuiz( questions );
+console.log( 'first' );
+new YtQuiz( 'M7lc1UVf-VE', questions );
+
+console.log( 'second' );
+new YtQuiz( 'X2pZ38jLKDA', JSON.parse( JSON.stringify( questions ) ),
+);
 
 // document.querySelector<HTMLDivElement>( '#app' )!.innerHTML = `
 //   <div>
